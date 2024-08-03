@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.bingo-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+.bingo-cell.selected {
+    background-color: #f00;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#turn-indicator {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.turn-your {
+    color: green;
+}
+
+.turn-opponent {
+    color: red;
+}
+
+#bingo-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
